@@ -48,14 +48,14 @@ const TestCreationForm = () => {
 
   return (
     <div className="container">
-      <h2>Create a New Test</h2>
+      <h2>Authorization</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Title</label>
+          <label>Email</label>
           <input type="text" className="form-control" name="title" value={title} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label>Description</label>
+          <label>Password</label>
           <textarea className="form-control" name="description" value={description} onChange={handleChange}></textarea>
         </div>
         {questions.map((question, index) => (
@@ -79,9 +79,9 @@ const TestCreationForm = () => {
           </div>
         ))}
         <button type="button" className="btn btn-primary" onClick={handleAddQuestion}>
-          Add Question
+          SignUP
         </button>
-        <button type="submit" className="btn btn-success">Create Test</button>
+        <button type="submit" className="btn btn-success">Sign in</button>
       </form>
     </div>
   );
