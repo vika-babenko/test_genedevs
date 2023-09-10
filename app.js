@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000; // Use port 3000 by default
+require('dotenv').config();
 
 // Define a simple route
 app.get('/', (req, res) => {
